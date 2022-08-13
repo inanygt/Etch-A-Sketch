@@ -8,22 +8,11 @@ function makeRows(rows,cols) {
       container.appendChild(cell).className = "grid-item";
    }
 }
-
-makeRows(16,16);
+makeRows(32,32);
 
 // HOVER
 
 let gridMouse = document.querySelectorAll(".grid-item")
-
-console.log(gridMouse)
-
-// gridMouse.addEventListener("mouseover", function() {
-//    gridMouse.setAttribute("style", "background-color:blue;");
-// })
-
-// gridMouse.addEventListener("mouseout", function() {
-//    gridMouse.setAttribute("style", "background-color: white;")
-// })
 
 gridMouse.forEach(grid => {
    grid.addEventListener("mouseover", function() {
@@ -31,8 +20,33 @@ gridMouse.forEach(grid => {
    })
 })
 
-gridMouse.forEach(grid => {
-   grid.addEventListener("mouseout", function() {
+// Button
+
+// // Selecting the button
+// const button = document.querySelector("#button")
+
+// // Event listener when clicked
+// button.addEventListener("click", function() {
+//    // A prompt will apear 
+//    let gridSide = prompt("choose the gridsize");
+//    // remove the existing grid
+//    gridMouse.forEach(grid => {
+//    grid.classList.remove("grid-item")
+// })
+//    // add the new grid with input from prompt
+//    makeRows(gridSide,gridSide);
+//    })
+//    // makeRows(gridSide,gridSide)
+
+
+// Button that will restart again 
+
+const button = document.querySelector("#button")
+
+button.addEventListener("click", function() {
+   gridMouse.forEach(grid => {
       grid.style.backgroundColor = "white";
    })
 })
+
+

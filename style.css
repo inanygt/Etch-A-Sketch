@@ -5,17 +5,27 @@
 }
 
 .container {
+   width: 90.25vw;
+   height: 90vh;
+   margin: 0 auto;
+   border: 1px solid black;
+   margin-top: 1rem;
    display: flex;
    flex-wrap: wrap;
 }
 
 .grid-item {
+   width: 2.8125vw;
+   height: 2.8125vh;
    border: 1px solid black;
-   width: 6.25vw;
-   height: 6.25vh;
-   /* transition: 50ms; */
 }
 
-/* .grid-item:hover {
-   background-color: black;
-} */
+#button {
+   width: 100px;
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid black;
+   display: block;
+   border-radius: 50px;
+   margin-top: 1rem;
+}
