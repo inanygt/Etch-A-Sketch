@@ -13,4 +13,9 @@
    border: 1px solid black;
    width: 6.25vw;
    height: 6.25vh;
+   /* transition: 50ms; */
 }
+
+/* .grid-item:hover {
+   background-color: black;
+} */
